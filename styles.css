@@ -60,6 +60,17 @@ header nav ul li a:hover {
     background-color: #ff6700;
     border-radius: 5px;
 }
+/* navbar menubar styling start */
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.topnav .icon {
+    display: none;
+  }
+
+/* navbar menubar styling end */
 
 /* Hero Section */
 #home {
@@ -116,8 +127,14 @@ header nav ul li a:hover {
 
 /* Section Styling */
 section {
-    padding: 60px 0;
+    padding:  2.5em 0;
     text-align: center;
+
+}
+.max-width-text {
+    max-width: 60%;
+    text-align: start;
+    margin: 0 auto;
 }
 
 .container {
@@ -136,6 +153,11 @@ p {
 }
 
 /* Services */
+.my-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .service-card {
     background-color: #fff;
     padding: 20px;
@@ -150,18 +172,68 @@ p {
 }
 
 /* Portfolio */
-.portfolio-grid {
+.Portfolio-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.Portfolio-links  li {
+    padding: .5em;
+    border: 1px solid rgba(0, 255, 0, 0.514);
+    border-radius: 8px;
+    margin: .5em;
+}
+.Portfolio-links  li:hover {
+    transition-delay: 1s;
+    background-image: linear-gradient(to right, rgba(117, 235, 123, 0.7), rgb(0, 131, 7));
+    border: 3px solid rgb(120, 170, 2);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+.parent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    margin: 0 auto;
+}
+    
+.div4 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
 }
 
-.portfolio-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.div5 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
 }
 
+.div6 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+}
+
+.div7 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div8 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div9 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+        
 /* Contact Form */
 form input,
 form textarea {
@@ -202,12 +274,14 @@ footer {
 footer p {
     margin: 0;
 }
+nav a.icon {
+    float: right;
+    display: none;
+  }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-    nav {
-        flex-direction: column;
-    }
+   
     #home {
         padding-top: 5%;
         padding-bottom: 10%;
@@ -246,13 +320,55 @@ footer p {
         margin: 10px;
         width: 100%;
     }
-
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
+/* emargency-zone */
+  
+  @media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
+    .my-services {
+        flex-direction: column;
+    }
+    /* portfolio section */
+    .Portfolio-links {
+        flex-direction: column;
+    }
+    .parent {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        grid-template-rows: auto;              /* Adjust row size dynamically */
+        margin: 0 auto;
+    }
 
+    .div4, .div5, .div6, .div7, .div8, .div9 {
+        grid-column: span 2; /* Make items span across 2 columns */
+    }
+
+    .div4 {
+        grid-row: span 2;
+    }
+    .div5 {
+        grid-row: span 2;
+    }
+    .div6 {
+        grid-row: span 2;
+    }
+    .div7 {
+        grid-row: span 2;
+    }
+    .div8 {
+        grid-row: span 2;
+    }
+    .div9 {
+        grid-row: span 2;
+    }
+  }
+
+  /* emargency-zone end */
+
+  
 @media (max-width: 768px) {
+   
     header nav ul {
         flex-direction: column;
         margin-top: 5px;
@@ -274,13 +390,15 @@ footer p {
     .container {
         width: 95%;
     }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
     form button {
         font-size: 1.1em;
+    }
+    .parent {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+
+    .div4, .div5, .div6, .div7, .div8, .div9 {
+        grid-column: span 1; /* Items will span 1 column */
     }
 }
 
@@ -299,10 +417,6 @@ footer p {
 
     h2 {
         font-size: 2em;
-    }
-
-    .portfolio-item img {
-        width: 100%;
     }
 
     form input,

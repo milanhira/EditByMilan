@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Milan Hira - Video Editing Services</title>
+    <!-- custorm css -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -15,8 +19,8 @@
             <div class="nav-logo">
                 <img src="./asset/myWebsiteLogo02.png" alt="website-logo">
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -30,7 +34,7 @@
         <img src="./asset/4.png" alt="">
         <div class="hero-content">
             <h1>Hi, I'm Milan Hira</h1>
-            <p>Your Go-To Video Editor for Professional and Creative Solutions</p>
+            <p style="margin-bottom: 2em;">With 5+ years of professional video editing experience. <br><span style="font-size: 1.5rem; font-weight: 700; color: rgba(217, 255, 0, 0.87);">"Transforming Ideas into Stunning Visual Stories"</span></p>
             <div class="home-link">
                 <a href="#contact" class="btn">Get in Touch</a>
                 <a href="#portfolio" class="btn btn-2" >Portfolio</a>
@@ -41,8 +45,18 @@
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a passionate video editor with over [X] years of experience in bringing creative ideas to life. I specialize in editing commercials, promotional videos, and cinematic content.</p>
+            <div class="max-width-text">
+                <h2 style="margin-bottom: 0;">About Me</h2>
+                <hr style="border-bottom: 8px solid rgba(0, 0, 0, 0.404); width: 20%">
+                <div style="margin-top: 1em;">
+                    <strong>Intro:</strong>
+                    <p style="margin-top: .5em; text-align:justify; width: 90%;">Bringing stories to life with every frame, I am a professional video editor with over 5 years of experience crafting compelling narratives. From the seamless transitions in Premiere Pro to the stunning visuals in After Effects, I use a wide array of software tools to <strong>transform raw footage into polished masterpieces</strong>.</p>
+                </div>
+                <div style="margin-top: 1em;">
+                    <strong>Bio:</strong>
+                    <p style="margin-top: .5em; text-align:justify; width: 90%;">With a solid foundation in industry-leading software like <strong>Adobe Premiere Pro, After Effects, DaVinci Resolve, CapCut, and more</strong>, <span style="background-color: rgba(255, 255, 0, 0.185);">specialize in creating high-impact videos for diverse needs—from cinematic storytelling to quick social media clips</span> . My work blends creativity with precision, ensuring that each project delivers maximum visual and emotional impact. Whether it's color grading, motion graphics, visual effects, or sound design, I bring a comprehensive skill set that enhances the storytelling process. My dedication to staying on top of trends and continuously mastering new tools allows me to provide innovative, on-brand content that stands out in a crowded digital world.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -50,17 +64,19 @@
     <section id="services">
         <div class="container">
             <h2>My Services</h2>
-            <div class="service-card">
-                <h3>Video Editing</h3>
-                <p>Providing professional video editing for all types of content including corporate, social media, and events.</p>
-            </div>
-            <div class="service-card">
-                <h3>Color Grading</h3>
-                <p>Enhancing video color to bring out the desired mood and style.</p>
-            </div>
-            <div class="service-card">
-                <h3>Motion Graphics</h3>
-                <p>Creating dynamic graphics and animations to elevate your videos.</p>
+            <div class="my-services">
+                <div class="service-card">
+                    <h3>Video Editing</h3>
+                    <p>Providing professional video editing for all types of content including corporate, social media, and events.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Color Grading</h3>
+                    <p>Enhancing video color to bring out the desired mood and style.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Motion Graphics</h3>
+                    <p>Creating dynamic graphics and animations to elevate your videos.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -69,19 +85,108 @@
     <section id="portfolio">
         <div class="container">
             <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="sample1.jpg" alt="Sample Work 1">
-                </div>
-                <div class="portfolio-item">
-                    <img src="sample2.jpg" alt="Sample Work 2">
-                </div>
-                <div class="portfolio-item">
-                    <img src="sample3.jpg" alt="Sample Work 3">
-                </div>
+            <div style="margin-bottom: 2.5em;">
+                <ul class="Portfolio-links" id="home-portfolio">
+                    <li><a href="#Corporate Videos">Corporate Videos</a></li>
+                    <li><a href="#Social Media Content">Social Media Content</a></li>
+                    <li><a href="#Event Videos">Event Videos</a></li>
+                    <li><a href="#Music Videos">Music Videos</a></li>
+                    <li><a href="#Documentary Films">Documentary Films</a></li>
+                    <li><a href="#Advertising & Commercials">Advertising & Commercials</a></li>
+                    <li><a href="#Film & TV Production">Film & TV Production</a></li>
+                    <li><a href="#Real Estate Videos">Real Estate Videos</a></li>
+                    <li><a href="#Tutorial and Educational Videos">Tutorial and Educational Videos</a></li>
+                    <li><a href="#Gaming Videos">Gaming Videos</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
+<!-- Corporate Videos -->
+            <div id="Corporate Videos" style="margin-top: 2.5em;">
+                    <h1 style="font-size: 2.5rem; margin-bottom: 1.2em; margin-top: 3em; border-bottom: 3px solid yellowgreen; text-align: center;">Corporate Videos</h1>
+                    <div class="parent" style="border: 1px solid blue;">
+                        <div class="div4">
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                        </div>
+                        <div class="div5"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe></div>
+                        <div class="div6"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div7"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div8"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div9"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                    </div>
+                    <a href="#home-portfolio"><p>HomePortfolio</p></a>
+            </div>
+            <!-- Social Media Content -->
+            <div id="Social Media Content" style="margin-top: 1.5em;">
+                    <h1 style="font-size: 2.5rem; margin-bottom: 1.2em; margin-top: 3em; border-bottom: 3px solid yellowgreen; text-align: center;">Social Media Content</h1>
+                    <div class="parent">
+                        <div class="div4">
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                        </div>
+                        <div class="div5"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe></div>
+                        <div class="div6"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div7"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div8"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div9"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                    </div>
+                    <a href="#home-portfolio"><p>HomePortfolio</p></a>
+            </div>
+            <!-- Event Videos -->
+            <div id="Event Videos" style="margin-top: 1.5em;">
+                    <h1 style="font-size: 2.5rem; margin-bottom: 1.2em; margin-top: 3em; border-bottom: 3px solid yellowgreen; text-align: center;">Event Videos</h1>
+                    <div class="parent">
+                        <div class="div4">
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                        </div>
+                        <div class="div5"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe></div>
+                        <div class="div6"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div7"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div8"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div9"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                    </div>
+                    <a href="#home-portfolio"><p>HomePortfolio</p></a>
+            </div>
+            <!-- Music Videos -->
+            <div id="Music Videos" style="margin-top: 1.5em;">
+                    <h1 style="font-size: 2.5rem; margin-bottom: 1.2em; margin-top: 3em; border-bottom: 3px solid yellowgreen; text-align: center;">Music Videos</h1>
+                    <div class="parent">
+                        <div class="div4">
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                        </div>
+                        <div class="div5"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe></div>
+                        <div class="div6"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div7"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div8"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                        <div class="div9"> <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></div>
+                    </div>
+                    <a href="#home-portfolio"><p>HomePortfolio</p></a>
+            </div>
+            
+
+</div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -102,5 +207,16 @@
     </footer>
 
     <script src="scripts.js"></script>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>
