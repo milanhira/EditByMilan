@@ -132,7 +132,7 @@ section {
 
 }
 .max-width-text {
-    max-width: 60%;
+    max-width: 70%;
     text-align: start;
     margin: 0 auto;
 }
@@ -305,7 +305,7 @@ nav a.icon {
         margin-left: 0%;
     }
     .container {
-        width: 90%;
+        width: 80%;
     }
 
     #home h1 {
@@ -316,10 +316,6 @@ nav a.icon {
         font-size: 1.3em;
     }
     
-    .service-card {
-        margin: 10px;
-        width: 100%;
-    }
 }
 /* emargency-zone */
   
@@ -327,11 +323,18 @@ nav a.icon {
     nav {
         flex-direction: column;
     }
-    .max-width-text {
+    .container h1 {
+        font-size: 1.75rem !important;
+    }
+    .max-width-text div {
         width: 100%;
     }
     .my-services {
         flex-direction: column;
+        width: 95%;
+    }
+    .container {
+        width: 100%;
     }
     /* portfolio section */
     .Portfolio-links {
