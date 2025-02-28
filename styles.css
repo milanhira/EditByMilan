@@ -327,6 +327,9 @@ nav a.icon {
     nav {
         flex-direction: column;
     }
+    .max-width-text {
+        width: 100%;
+    }
     .my-services {
         flex-direction: column;
     }
